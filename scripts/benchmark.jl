@@ -59,8 +59,8 @@ function benchmark_list()
     # If the job timeouts, comment out the test cases and run them one at a time.
     return [
         FractalParams(1024, 30),
-        # FractalParams(2048, 5),
-        # FractalParams(512, 120),
+        FractalParams(2048, 5),
+        FractalParams(512, 120),
     ]
 end
 

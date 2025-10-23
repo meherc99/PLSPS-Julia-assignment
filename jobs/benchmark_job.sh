@@ -3,7 +3,7 @@
 #SBATCH --time=00:15:00
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=17
-#SBATCH --output=jobs/benchmark_%j.out
+#SBATCH --output=logs/benchmark_%j.out
 
 PROCS=(0 1 2 4 8 16 32) # 2^0 to 2^5 Workers 
 

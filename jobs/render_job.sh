@@ -3,11 +3,11 @@
 #SBATCH --time=00:15:00
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=17
-#SBATCH --output=jobs/render_%j.out
+#SBATCH --output=logs/render_%j.out
 
 # Sequential -> P=0
 # Parallel   -> P=[1, 2, 4, 8, 16, 32]
-P=0
+P=4
 
 # Sequential (P = 0)
 if [ "$P" -eq 0 ]; then
