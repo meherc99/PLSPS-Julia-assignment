@@ -1,0 +1,152 @@
+Warning: Permanently added 'node053,10.141.0.53' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'node054,10.141.0.54' (ECDSA) to the list of known hosts.
+┌ Error: Error during package callback
+│   exception =
+│    1-element ExceptionStack:
+│    On worker 2:
+│    ArgumentError: Package CairoMakie [13f3f980-e62b-5c42-98c6-ff1f3baf88f0] is required but does not seem to be installed:
+│     - Run `Pkg.instantiate()` to install all recorded dependencies.
+│    
+│    Stacktrace:
+│      [1] _require
+│        @ ./loading.jl:1926
+│      [2] __require_prelocked
+│        @ ./loading.jl:1812
+│      [3] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│      [4] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│      [5] _require_prelocked
+│        @ ./loading.jl:1803 [inlined]
+│      [6] _require_prelocked
+│        @ ./loading.jl:1802 [inlined]
+│      [7] macro expansion
+│        @ ./lock.jl:267 [inlined]
+│      [8] require
+│        @ ./loading.jl:1797
+│      [9] #2
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/Distributed.jl:83
+│     [10] #invokelatest#2
+│        @ ./essentials.jl:892 [inlined]
+│     [11] invokelatest
+│        @ ./essentials.jl:889
+│     [12] #114
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:303
+│     [13] run_work_thunk
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│     [14] run_work_thunk
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:79
+│     [15] #100
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:88
+│    
+│    ...and 3 more exceptions.
+│    
+│    Stacktrace:
+│      [1] sync_end(c::Channel{Any})
+│        @ Base ./task.jl:448
+│      [2] macro expansion
+│        @ ./task.jl:480 [inlined]
+│      [3] _require_callback(mod::Base.PkgId)
+│        @ Distributed /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/Distributed.jl:77
+│      [4] #invokelatest#2
+│        @ ./essentials.jl:892 [inlined]
+│      [5] invokelatest
+│        @ ./essentials.jl:889 [inlined]
+│      [6] run_package_callbacks(modkey::Base.PkgId)
+│        @ Base ./loading.jl:1169
+│      [7] __require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1819
+│      [8] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│      [9] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [10] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1803
+│     [11] macro expansion
+│        @ ./loading.jl:1790 [inlined]
+│     [12] macro expansion
+│        @ ./lock.jl:267 [inlined]
+│     [13] __require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1753
+│     [14] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│     [15] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [16] require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1746
+│     [17] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:495
+│     [18] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:318
+│     [19] _start()
+│        @ Base ./client.jl:552
+└ @ Base loading.jl:1174
+==================================================
+RENDER: P=4
+-------------------------
+Fractal:     FP(N=2048, F=60, M=100, center=(-0.7269, 0.1889), alpha=0.8, delta=0.5)
+File Name:   output/fractal_2048_60_100.gif
+FPS:         5
+Color:       oslo
+Show Labels: false
+==================================================
+[FRAME 1/60 RENDERED]
+[FRAME 2/60 RENDERED]
+[FRAME 3/60 RENDERED]
+[FRAME 4/60 RENDERED]
+[FRAME 5/60 RENDERED]
+[FRAME 6/60 RENDERED]
+[FRAME 7/60 RENDERED]
+[FRAME 8/60 RENDERED]
+[FRAME 9/60 RENDERED]
+[FRAME 10/60 RENDERED]
+[FRAME 11/60 RENDERED]
+[FRAME 12/60 RENDERED]
+[FRAME 13/60 RENDERED]
+[FRAME 14/60 RENDERED]
+[FRAME 15/60 RENDERED]
+[FRAME 16/60 RENDERED]
+[FRAME 17/60 RENDERED]
+[FRAME 18/60 RENDERED]
+[FRAME 19/60 RENDERED]
+[FRAME 20/60 RENDERED]
+[FRAME 21/60 RENDERED]
+[FRAME 22/60 RENDERED]
+[FRAME 23/60 RENDERED]
+[FRAME 24/60 RENDERED]
+[FRAME 25/60 RENDERED]
+[FRAME 26/60 RENDERED]
+[FRAME 27/60 RENDERED]
+[FRAME 28/60 RENDERED]
+[FRAME 29/60 RENDERED]
+[FRAME 30/60 RENDERED]
+[FRAME 31/60 RENDERED]
+[FRAME 32/60 RENDERED]
+[FRAME 33/60 RENDERED]
+[FRAME 34/60 RENDERED]
+[FRAME 35/60 RENDERED]
+[FRAME 36/60 RENDERED]
+[FRAME 37/60 RENDERED]
+[FRAME 38/60 RENDERED]
+[FRAME 39/60 RENDERED]
+[FRAME 40/60 RENDERED]
+[FRAME 41/60 RENDERED]
+[FRAME 42/60 RENDERED]
+[FRAME 43/60 RENDERED]
+[FRAME 44/60 RENDERED]
+[FRAME 45/60 RENDERED]
+[FRAME 46/60 RENDERED]
+[FRAME 47/60 RENDERED]
+[FRAME 48/60 RENDERED]
+[FRAME 49/60 RENDERED]
+[FRAME 50/60 RENDERED]
+[FRAME 51/60 RENDERED]
+[FRAME 52/60 RENDERED]
+[FRAME 53/60 RENDERED]
+[FRAME 54/60 RENDERED]
+[FRAME 55/60 RENDERED]
+[FRAME 56/60 RENDERED]
+[FRAME 57/60 RENDERED]
+[FRAME 58/60 RENDERED]
+[FRAME 59/60 RENDERED]
+[FRAME 60/60 RENDERED]

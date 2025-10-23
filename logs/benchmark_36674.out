@@ -1,0 +1,531 @@
+  Activating project at `~/Assignment`
+==================================================
+BENCHMARK: SEQUENTIAL
+-------------------------
+Runs per Benchmark: 5
+==================================================
+[BENCHMARK 1/2 COMPLETE: 'results/benchmark_P0_N2048_F5_M100.json']
+[BENCHMARK 2/2 COMPLETE: 'results/benchmark_P0_N512_F120_M100.json']
+
+  Activating project at `~/Assignment`
+      From worker 2:	  Activating project at `~/Assignment`
+==================================================
+BENCHMARK: P=1
+-------------------------
+Runs per Benchmark: 5
+==================================================
+[BENCHMARK 1/2 COMPLETE: 'results/benchmark_P1_N2048_F5_M100.json']
+[BENCHMARK 2/2 COMPLETE: 'results/benchmark_P1_N512_F120_M100.json']
+
+┌ Error: Error during package callback
+│   exception =
+│    1-element ExceptionStack:
+│    On worker 2:
+│    ArgumentError: Package JSON [682c06a0-de6a-54ab-a142-c8b1cf79cde6] is required but does not seem to be installed:
+│     - Run `Pkg.instantiate()` to install all recorded dependencies.
+│    
+│    Stacktrace:
+│      [1] _require
+│        @ ./loading.jl:1926
+│      [2] __require_prelocked
+│        @ ./loading.jl:1812
+│      [3] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│      [4] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│      [5] _require_prelocked
+│        @ ./loading.jl:1803 [inlined]
+│      [6] _require_prelocked
+│        @ ./loading.jl:1802 [inlined]
+│      [7] macro expansion
+│        @ ./lock.jl:267 [inlined]
+│      [8] require
+│        @ ./loading.jl:1797
+│      [9] #2
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/Distributed.jl:83
+│     [10] #invokelatest#2
+│        @ ./essentials.jl:892 [inlined]
+│     [11] invokelatest
+│        @ ./essentials.jl:889
+│     [12] #114
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:303
+│     [13] run_work_thunk
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│     [14] run_work_thunk
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:79
+│     [15] #100
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:88
+│    
+│    ...and 1 more exception.
+│    
+│    Stacktrace:
+│      [1] sync_end(c::Channel{Any})
+│        @ Base ./task.jl:448
+│      [2] macro expansion
+│        @ ./task.jl:480 [inlined]
+│      [3] _require_callback(mod::Base.PkgId)
+│        @ Distributed /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/Distributed.jl:77
+│      [4] #invokelatest#2
+│        @ ./essentials.jl:892 [inlined]
+│      [5] invokelatest
+│        @ ./essentials.jl:889 [inlined]
+│      [6] run_package_callbacks(modkey::Base.PkgId)
+│        @ Base ./loading.jl:1169
+│      [7] __require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1819
+│      [8] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│      [9] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [10] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1803
+│     [11] macro expansion
+│        @ ./loading.jl:1790 [inlined]
+│     [12] macro expansion
+│        @ ./lock.jl:267 [inlined]
+│     [13] __require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1753
+│     [14] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│     [15] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [16] require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1746
+│     [17] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:495
+│     [18] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:318
+│     [19] _start()
+│        @ Base ./client.jl:552
+└ @ Base loading.jl:1174
+  Activating project at `~/Assignment`
+      From worker 2:	  Activating project at `~/Assignment`
+      From worker 3:	  Activating project at `~/Assignment`
+==================================================
+BENCHMARK: P=2
+-------------------------
+Runs per Benchmark: 5
+==================================================
+[BENCHMARK 1/2 COMPLETE: 'results/benchmark_P2_N2048_F5_M100.json']
+[BENCHMARK 2/2 COMPLETE: 'results/benchmark_P2_N512_F120_M100.json']
+
+┌ Error: Error during package callback
+│   exception =
+│    1-element ExceptionStack:
+│    On worker 2:
+│    ArgumentError: Package JSON [682c06a0-de6a-54ab-a142-c8b1cf79cde6] is required but does not seem to be installed:
+│     - Run `Pkg.instantiate()` to install all recorded dependencies.
+│    
+│    Stacktrace:
+│      [1] _require
+│        @ ./loading.jl:1926
+│      [2] __require_prelocked
+│        @ ./loading.jl:1812
+│      [3] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│      [4] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│      [5] _require_prelocked
+│        @ ./loading.jl:1803 [inlined]
+│      [6] _require_prelocked
+│        @ ./loading.jl:1802 [inlined]
+│      [7] macro expansion
+│        @ ./lock.jl:267 [inlined]
+│      [8] require
+│        @ ./loading.jl:1797
+│      [9] #2
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/Distributed.jl:83
+│     [10] #invokelatest#2
+│        @ ./essentials.jl:892 [inlined]
+│     [11] invokelatest
+│        @ ./essentials.jl:889
+│     [12] #114
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:303
+│     [13] run_work_thunk
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│     [14] run_work_thunk
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:79
+│     [15] #100
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:88
+│    
+│    ...and 3 more exceptions.
+│    
+│    Stacktrace:
+│      [1] sync_end(c::Channel{Any})
+│        @ Base ./task.jl:448
+│      [2] macro expansion
+│        @ ./task.jl:480 [inlined]
+│      [3] _require_callback(mod::Base.PkgId)
+│        @ Distributed /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/Distributed.jl:77
+│      [4] #invokelatest#2
+│        @ ./essentials.jl:892 [inlined]
+│      [5] invokelatest
+│        @ ./essentials.jl:889 [inlined]
+│      [6] run_package_callbacks(modkey::Base.PkgId)
+│        @ Base ./loading.jl:1169
+│      [7] __require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1819
+│      [8] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│      [9] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [10] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1803
+│     [11] macro expansion
+│        @ ./loading.jl:1790 [inlined]
+│     [12] macro expansion
+│        @ ./lock.jl:267 [inlined]
+│     [13] __require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1753
+│     [14] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│     [15] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [16] require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1746
+│     [17] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:495
+│     [18] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:318
+│     [19] _start()
+│        @ Base ./client.jl:552
+└ @ Base loading.jl:1174
+  Activating project at `~/Assignment`
+      From worker 2:	  Activating project at `~/Assignment`
+      From worker 5:	  Activating project at `~/Assignment`
+      From worker 3:	  Activating project at `~/Assignment`
+      From worker 4:	  Activating project at `~/Assignment`
+==================================================
+BENCHMARK: P=4
+-------------------------
+Runs per Benchmark: 5
+==================================================
+[BENCHMARK 1/2 COMPLETE: 'results/benchmark_P4_N2048_F5_M100.json']
+[BENCHMARK 2/2 COMPLETE: 'results/benchmark_P4_N512_F120_M100.json']
+
+┌ Error: Error during package callback
+│   exception =
+│    1-element ExceptionStack:
+│    On worker 2:
+│    ArgumentError: Package JSON [682c06a0-de6a-54ab-a142-c8b1cf79cde6] is required but does not seem to be installed:
+│     - Run `Pkg.instantiate()` to install all recorded dependencies.
+│    
+│    Stacktrace:
+│      [1] _require
+│        @ ./loading.jl:1926
+│      [2] __require_prelocked
+│        @ ./loading.jl:1812
+│      [3] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│      [4] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│      [5] _require_prelocked
+│        @ ./loading.jl:1803 [inlined]
+│      [6] _require_prelocked
+│        @ ./loading.jl:1802 [inlined]
+│      [7] macro expansion
+│        @ ./lock.jl:267 [inlined]
+│      [8] require
+│        @ ./loading.jl:1797
+│      [9] #2
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/Distributed.jl:83
+│     [10] #invokelatest#2
+│        @ ./essentials.jl:892 [inlined]
+│     [11] invokelatest
+│        @ ./essentials.jl:889
+│     [12] #114
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:303
+│     [13] run_work_thunk
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│     [14] run_work_thunk
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:79
+│     [15] #100
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:88
+│    
+│    ...and 7 more exceptions.
+│    
+│    Stacktrace:
+│      [1] sync_end(c::Channel{Any})
+│        @ Base ./task.jl:448
+│      [2] macro expansion
+│        @ ./task.jl:480 [inlined]
+│      [3] _require_callback(mod::Base.PkgId)
+│        @ Distributed /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/Distributed.jl:77
+│      [4] #invokelatest#2
+│        @ ./essentials.jl:892 [inlined]
+│      [5] invokelatest
+│        @ ./essentials.jl:889 [inlined]
+│      [6] run_package_callbacks(modkey::Base.PkgId)
+│        @ Base ./loading.jl:1169
+│      [7] __require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1819
+│      [8] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│      [9] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [10] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1803
+│     [11] macro expansion
+│        @ ./loading.jl:1790 [inlined]
+│     [12] macro expansion
+│        @ ./lock.jl:267 [inlined]
+│     [13] __require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1753
+│     [14] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│     [15] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [16] require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1746
+│     [17] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:495
+│     [18] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:318
+│     [19] _start()
+│        @ Base ./client.jl:552
+└ @ Base loading.jl:1174
+  Activating project at `~/Assignment`
+      From worker 3:	  Activating project at `~/Assignment`
+      From worker 5:	  Activating project at `~/Assignment`
+      From worker 6:	  Activating project at `~/Assignment`
+      From worker 4:	  Activating project at `~/Assignment`
+      From worker 2:	  Activating project at `~/Assignment`
+      From worker 7:	  Activating project at `~/Assignment`
+      From worker 9:	  Activating project at `~/Assignment`
+      From worker 8:	  Activating project at `~/Assignment`
+==================================================
+BENCHMARK: P=8
+-------------------------
+Runs per Benchmark: 5
+==================================================
+[BENCHMARK 1/2 COMPLETE: 'results/benchmark_P8_N2048_F5_M100.json']
+[BENCHMARK 2/2 COMPLETE: 'results/benchmark_P8_N512_F120_M100.json']
+
+┌ Error: Error during package callback
+│   exception =
+│    1-element ExceptionStack:
+│    On worker 2:
+│    ArgumentError: Package JSON [682c06a0-de6a-54ab-a142-c8b1cf79cde6] is required but does not seem to be installed:
+│     - Run `Pkg.instantiate()` to install all recorded dependencies.
+│    
+│    Stacktrace:
+│      [1] _require
+│        @ ./loading.jl:1926
+│      [2] __require_prelocked
+│        @ ./loading.jl:1812
+│      [3] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│      [4] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│      [5] _require_prelocked
+│        @ ./loading.jl:1803 [inlined]
+│      [6] _require_prelocked
+│        @ ./loading.jl:1802 [inlined]
+│      [7] macro expansion
+│        @ ./lock.jl:267 [inlined]
+│      [8] require
+│        @ ./loading.jl:1797
+│      [9] #2
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/Distributed.jl:83
+│     [10] #invokelatest#2
+│        @ ./essentials.jl:892 [inlined]
+│     [11] invokelatest
+│        @ ./essentials.jl:889
+│     [12] #114
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:303
+│     [13] run_work_thunk
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│     [14] run_work_thunk
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:79
+│     [15] #100
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:88
+│    
+│    ...and 15 more exceptions.
+│    
+│    Stacktrace:
+│      [1] sync_end(c::Channel{Any})
+│        @ Base ./task.jl:448
+│      [2] macro expansion
+│        @ ./task.jl:480 [inlined]
+│      [3] _require_callback(mod::Base.PkgId)
+│        @ Distributed /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/Distributed.jl:77
+│      [4] #invokelatest#2
+│        @ ./essentials.jl:892 [inlined]
+│      [5] invokelatest
+│        @ ./essentials.jl:889 [inlined]
+│      [6] run_package_callbacks(modkey::Base.PkgId)
+│        @ Base ./loading.jl:1169
+│      [7] __require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1819
+│      [8] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│      [9] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [10] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1803
+│     [11] macro expansion
+│        @ ./loading.jl:1790 [inlined]
+│     [12] macro expansion
+│        @ ./lock.jl:267 [inlined]
+│     [13] __require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1753
+│     [14] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│     [15] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [16] require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1746
+│     [17] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:495
+│     [18] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:318
+│     [19] _start()
+│        @ Base ./client.jl:552
+└ @ Base loading.jl:1174
+  Activating project at `~/Assignment`
+      From worker 2:	  Activating project at `~/Assignment`
+      From worker 16:	  Activating project at `~/Assignment`
+      From worker 13:	  Activating project at `~/Assignment`
+      From worker 12:	  Activating project at `~/Assignment`
+      From worker 17:	  Activating project at `~/Assignment`
+      From worker 15:	  Activating project at `~/Assignment`
+      From worker 14:	  Activating project at `~/Assignment`
+      From worker 11:	  Activating project at `~/Assignment`
+      From worker 3:	  Activating project at `~/Assignment`
+      From worker 6:	  Activating project at `~/Assignment`
+      From worker 7:	  Activating project at `~/Assignment`
+      From worker 8:	  Activating project at `~/Assignment`
+      From worker 4:	  Activating project at `~/Assignment`
+      From worker 10:	  Activating project at `~/Assignment`
+      From worker 9:	  Activating project at `~/Assignment`
+      From worker 5:	  Activating project at `~/Assignment`
+==================================================
+BENCHMARK: P=16
+-------------------------
+Runs per Benchmark: 5
+==================================================
+[BENCHMARK 1/2 COMPLETE: 'results/benchmark_P16_N2048_F5_M100.json']
+[BENCHMARK 2/2 COMPLETE: 'results/benchmark_P16_N512_F120_M100.json']
+
+┌ Error: Error during package callback
+│   exception =
+│    1-element ExceptionStack:
+│    On worker 2:
+│    ArgumentError: Package JSON [682c06a0-de6a-54ab-a142-c8b1cf79cde6] is required but does not seem to be installed:
+│     - Run `Pkg.instantiate()` to install all recorded dependencies.
+│    
+│    Stacktrace:
+│      [1] _require
+│        @ ./loading.jl:1926
+│      [2] __require_prelocked
+│        @ ./loading.jl:1812
+│      [3] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│      [4] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│      [5] _require_prelocked
+│        @ ./loading.jl:1803 [inlined]
+│      [6] _require_prelocked
+│        @ ./loading.jl:1802 [inlined]
+│      [7] macro expansion
+│        @ ./lock.jl:267 [inlined]
+│      [8] require
+│        @ ./loading.jl:1797
+│      [9] #2
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/Distributed.jl:83
+│     [10] #invokelatest#2
+│        @ ./essentials.jl:892 [inlined]
+│     [11] invokelatest
+│        @ ./essentials.jl:889
+│     [12] #114
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:303
+│     [13] run_work_thunk
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│     [14] run_work_thunk
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:79
+│     [15] #100
+│        @ /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:88
+│    
+│    ...and 31 more exceptions.
+│    
+│    Stacktrace:
+│      [1] sync_end(c::Channel{Any})
+│        @ Base ./task.jl:448
+│      [2] macro expansion
+│        @ ./task.jl:480 [inlined]
+│      [3] _require_callback(mod::Base.PkgId)
+│        @ Distributed /cm/shared/package/julia/julia-1.10.3/share/julia/stdlib/v1.10/Distributed/src/Distributed.jl:77
+│      [4] #invokelatest#2
+│        @ ./essentials.jl:892 [inlined]
+│      [5] invokelatest
+│        @ ./essentials.jl:889 [inlined]
+│      [6] run_package_callbacks(modkey::Base.PkgId)
+│        @ Base ./loading.jl:1169
+│      [7] __require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1819
+│      [8] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│      [9] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [10] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1803
+│     [11] macro expansion
+│        @ ./loading.jl:1790 [inlined]
+│     [12] macro expansion
+│        @ ./lock.jl:267 [inlined]
+│     [13] __require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1753
+│     [14] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│     [15] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [16] require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1746
+│     [17] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:495
+│     [18] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:318
+│     [19] _start()
+│        @ Base ./client.jl:552
+└ @ Base loading.jl:1174
+  Activating project at `~/Assignment`
+      From worker 3:	  Activating project at `~/Assignment`
+      From worker 13:	  Activating project at `~/Assignment`
+      From worker 15:	  Activating project at `~/Assignment`
+      From worker 4:	  Activating project at `~/Assignment`
+      From worker 10:	  Activating project at `~/Assignment`
+      From worker 6:	  Activating project at `~/Assignment`
+      From worker 17:	  Activating project at `~/Assignment`
+      From worker 5:	  Activating project at `~/Assignment`
+      From worker 9:	  Activating project at `~/Assignment`
+      From worker 11:	  Activating project at `~/Assignment`
+      From worker 12:	  Activating project at `~/Assignment`
+      From worker 8:	  Activating project at `~/Assignment`
+      From worker 16:	  Activating project at `~/Assignment`
+      From worker 7:	  Activating project at `~/Assignment`
+      From worker 14:	  Activating project at `~/Assignment`
+      From worker 18:	  Activating project at `~/Assignment`
+      From worker 2:	  Activating project at `~/Assignment`
+      From worker 27:	  Activating project at `~/Assignment`
+      From worker 23:	  Activating project at `~/Assignment`
+      From worker 22:	  Activating project at `~/Assignment`
+      From worker 26:	  Activating project at `~/Assignment`
+      From worker 33:	  Activating project at `~/Assignment`
+      From worker 25:	  Activating project at `~/Assignment`
+      From worker 21:	  Activating project at `~/Assignment`
+      From worker 29:	  Activating project at `~/Assignment`
+      From worker 31:	  Activating project at `~/Assignment`
+      From worker 32:	  Activating project at `~/Assignment`
+      From worker 20:	  Activating project at `~/Assignment`
+      From worker 24:	  Activating project at `~/Assignment`
+      From worker 19:	  Activating project at `~/Assignment`
+      From worker 28:	  Activating project at `~/Assignment`
+      From worker 30:	  Activating project at `~/Assignment`
+==================================================
+BENCHMARK: P=32
+-------------------------
+Runs per Benchmark: 5
+==================================================
+[BENCHMARK 1/2 COMPLETE: 'results/benchmark_P32_N2048_F5_M100.json']
+[BENCHMARK 2/2 COMPLETE: 'results/benchmark_P32_N512_F120_M100.json']
+
